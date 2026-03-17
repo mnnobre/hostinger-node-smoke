@@ -7,9 +7,9 @@
     "npm": ">=10"
   },
   "scripts": {
-    "build": "node -e \"console.log('build-ok')\"",
-    "start": "node server.js",
-    "start:prod": "node server.js"
+    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('server.js','dist/server.js');console.log('build-ok')\"",
+    "start": "node dist/server.js",
+    "start:prod": "node dist/server.js"
   },
   "dependencies": {
     "express": "^4.19.2"
