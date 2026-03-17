@@ -1,0 +1,17 @@
+{
+  "name": "hostinger-node-smoke",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "18.x",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "build": "node -e \"console.log('build-ok')\"",
+    "start": "node server.js",
+    "start:prod": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
